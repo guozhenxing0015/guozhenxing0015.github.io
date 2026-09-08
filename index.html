@@ -1,25 +1,201 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Zhenxing Guo - Statistical learning and computational biology at CUHK-Shenzhen"><title>Zhenxing Guo</title><link rel="stylesheet" href="styles.css"></head><body>
-<nav class="navbar"><div class="container"><a class="navbar-brand" href="index.html">Zhenxing Guo</a><ul class="navbar-nav"><li class="active"><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="publications.html">Publications</a></li><li><a href="software.html">Software</a></li><li><a href="teaching.html">Teaching</a></li></ul></div></nav>
-<main class="container">
-<h2 class="home-welcome">Welcome to Zhenxing Guo's Homepage</h2>
-<div class="intro-grid">
-  <div><img class="profile" src="assets/profile.jpg" alt="Zhenxing Guo"></div>
-  <div>
-    <h3 style="margin-top:0">Zhenxing Guo</h3>
-    <p>Assistant Professor<br>School of Data Science<br>The Chinese University of Hong Kong, Shenzhen</p>
-    <p>I develop statistical and computational methods for biomedical and omics data, with particular interests in epitranscriptomics, transcriptomics, single-cell analysis, spatial omics, and multi-omics integration.</p>
-    <div class="link-row"><a href="https://scholar.google.com.hk/citations?user=hm0mP4EAAAAJ&hl=en">Google Scholar</a><a href="https://orcid.org/0000-0003-1681-1337">ORCID</a><a href="https://github.com/ZhenxingGuo0015">GitHub</a><a href="assets/ZhenxingGuo_CV.pdf">CV</a></div>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About the PI | Zhenxing Guo</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background: #fff;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+  .navbar {
+    min-height: 58px;
+    background: linear-gradient(#f8f8f8, #eeeeee);
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  .nav-wrap {
+    width: 970px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 58px;
+  }
+  .brand {
+    font-size: 24px;
+    font-weight: 300;
+    color: #666;
+    text-decoration: none;
+    margin-right: 55px;
+  }
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .nav a {
+    color: #666;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .nav a:hover, .nav .active a { color: #222; }
+
+  .container {
+    width: 970px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 1.14;
+    margin: 34px 0 26px;
+    font-weight: 700;
+    color: #303030;
+  }
+  h2 {
+    font-size: 27px;
+    margin: 42px 0 16px;
+    font-weight: 700;
+    color: #333;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    margin: 0 0 38px;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 235px 1fr;
+    gap: 38px;
+    align-items: start;
+    margin-bottom: 28px;
+  }
+  .profile {
+    width: 235px;
+    height: auto;
+    display: block;
+  }
+  .contact p {
+    margin: 0 0 2px;
+  }
+  .contact .spacer { margin-top: 28px; }
+  a { color: #008cdd; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .bio p {
+    margin: 0 0 15px;
+  }
+  .bio-links {
+    margin-top: 20px;
+    line-height: 1.35;
+  }
+  footer {
+    width: 970px;
+    max-width: calc(100% - 40px);
+    margin: 52px auto 30px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 14px;
+  }
+
+  @media (max-width: 760px) {
+    .nav-wrap { align-items: flex-start; padding: 12px 0; }
+    .brand { margin-right: 25px; }
+    .nav { gap: 14px 20px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .profile { width: 220px; }
+    h1 { font-size: 34px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-wrap">
+  
+<!--    <a class="brand" href="index.html">Home</a>     --> 
+
+    <ul class="nav">
+  
+      <li class="active"><a href="index.html">About the PI</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="software.html">Softwares</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
   </div>
-</div>
-<hr>
-<h3>Research interests</h3>
-<p>Statistical learning; computational biology; epitranscriptomics; RNA modifications; single-cell and spatial omics; multi-omics integration.</p>
-<hr>
-<h3>Selected work</h3>
-<ul>
-<li><strong>scCTS</strong>: identifying cell-type-specific marker genes from population-level single-cell RNA-seq. <em>Genome Biology</em>, 2024.</li>
-<li><strong>magpie</strong>: power evaluation for differential RNA methylation analysis in m6A sequencing. <em>PLOS Computational Biology</em>, 2024.</li>
-<li>Differential RNA methylation analysis for MeRIP-seq data under general experimental design. <em>Bioinformatics</em>, 2022.</li>
-</ul>
-<p><a href="publications.html">See all selected publications →</a></p>
-</main><footer><div class="container">© <span data-year></span> Zhenxing Guo</div></footer><script src="script.js"></script></body></html>
+</nav>
+
+<main class="container">
+  <h1>Zhenxing Guo</h1>
+  <hr>
+
+  <h2>About me</h2>
+
+  <div class="about-grid">
+    <div>
+      <img class="profile" src="assets/profile.jpg" alt="Zhenxing Guo">
+    </div>
+
+    <div class="contact">
+      <p>Zhenxing Guo (郭振兴)</p>
+      <p><a href="https://sds.cuhk.edu.cn/en">School of Data Science</a></p>
+      <p><a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, Shenzhen</a></p>
+      <p>Shenzhen, China</p>
+
+      
+      
+
+      <p class="spacer">
+      <p>Email: guozhenxing@cuhk.edu.cn</p>
+      <p>Presidential Young Fellow</p>
+        <a href="https://sds.cuhk.edu.cn/en/teacher/643">My official webpage at CUHK-SZ</a><br>
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Bio</h2>
+
+  <div class="bio">
+    <p>
+	My research lies at the intersection of statistical methodology and computational biology. 
+	I develop statistical and computational methods for modern sequencing data, with a particular focus on RNA epigenetics and epitranscriptomics, transcriptomics, and single-cell and spatial omics. 
+	My methodological interests include inference for RNA modifications, differential analysis, representation learning, and statistical modeling of complex biological data.
+    </p>
+    
+        <p>
+	 Research in my lab has been generously supported by the National Natural Science Foundation of China (NSFC) Young Scientists Fund (12401650, PI: Guo), 
+	 the Young Scholar Projects under the 1+1+1 CUHK-CUHK(SZ)-GDSTC Joint Collaboration Fund (co-PI: Guo), and an NSFC Special Project (82441027, PI: Lu; Co-Investigator: Guo).
+    </p>
+
+
+    <p>
+      I am currently an Assistant Professor in the School of Data Science at The Chinese University of
+      Hong Kong, Shenzhen. Before joining CUHK-SZ, I received my Ph.D. in Biostatistics from <a href="https://www.emory.edu/">Emory University</a> under the guidance of <a href="http://haowulab.org">Prof. Hao Wu</a>. Before that,
+      I received my M.S. in Operational Research from the <a href="http://english.amss.cas.cn/">the Academy of Mathematics and Systems Science, Chinese Academy of Sciences</a>, and my B.S. in Applied Mathematics from <a href="https://www-en.hnu.edu.cn/">Hunan University</a>.
+    </p>
+
+    <div class="bio-links">
+      <a href="https://orcid.org/0000-0003-1681-1337">ORCID: 0000-0003-1681-1337</a><br>
+      <a href="https://scholar.google.com.hk/citations?user=hm0mP4EAAAAJ&hl=en">Google Scholar</a><br>
+      <a href="https://github.com/guozhenxing0015">GitHub</a><br>
+      <a href="assets/ZhenxingGuo_CV.pdf">Zhenxing's CV</a>
+    </div>
+  </div>
+</main>
+
+<footer>© Zhenxing Guo</footer>
+</body>
+</html>
