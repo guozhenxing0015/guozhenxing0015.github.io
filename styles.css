@@ -8,7 +8,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:var(--text);background:#fff}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.6;color:var(--text);background:#fff}
 a{color:var(--link);text-decoration:none}
 a:hover,a:focus{color:var(--link-hover);text-decoration:underline}
 .container{width:970px;max-width:calc(100% - 30px);margin:0 auto}
@@ -22,14 +22,14 @@ a:hover,a:focus{color:var(--link-hover);text-decoration:underline}
 .navbar-nav li.active a{background:#e7e7e7;color:#333}
 main{min-height:calc(100vh - 150px)}
 h1,h2,h3,h4{font-weight:400;line-height:1.25;color:#333}
-h1{font-size:30px;margin:18px 0 22px}
-h2{font-size:24px;margin:28px 0 16px}
-h3{font-size:20px;margin:24px 0 12px}
+h1{font-size:28px;margin:18px 0 22px}
+h2{font-size:22px;margin:28px 0 16px}
+h3{font-size:18px;margin:24px 0 12px}
 h4{font-size:16px;margin:18px 0 8px}
 p{margin:0 0 12px}
 hr{border:0;border-top:1px solid #eee;margin:24px 0}
 .page-title{margin-top:6px}
-.home-welcome{font-size:24px;margin:12px 0 18px}
+.home-welcome{font-size:20px;margin:12px 0 18px}
 .home-image{display:block;max-width:780px;width:100%;max-height:460px;object-fit:contain;margin:18px auto 24px}
 .intro-grid{display:grid;grid-template-columns:190px 1fr;gap:30px;align-items:start}
 .profile{width:180px;max-width:100%;height:auto;border-radius:2px}
